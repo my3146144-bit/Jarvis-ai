@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis AI</title>
+<style>
+body{background:#101820;color:white;text-align:center;font-family:Arial;padding:20px}
+button{padding:15px;background:#00c853;border:0;border-radius:10px;margin:8px}
+</style>
+</head>
+<body>
+<h1>🤖 Jarvis AI</h1>
+<p>Voice Assistant</p>
+<button onclick="speak()">Speak</button>
+<script>
+function speak(){
+let msg=new SpeechSynthesisUtterance("Hello, I am Jarvis");
+msg.lang="en-US";
+speechSynthesis.speak(msg);
+}
+</script>
+</body>
+</html>
